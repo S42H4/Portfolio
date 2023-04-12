@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+    height: 15vh;
+    display: flex;
+    background-color: rgb(18, 17, 17);
+    color: aliceblue;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+body{
+    margin: 0px;
+}
+main{
+    padding: 0px 100px;
+    padding-top: 15vh;
+}
+main h2{
+    font-size: 35px;
+}
+main p{
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+form{
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+#galeria-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    grid-template-rows: 400px 400px;
+    row-gap: 20px;
+}
+#galeria-container > img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+#galeria-container > img:hover{
+    filter: brightness(0.2);
+}
+#about-me{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 250px;
+}
+#about-me > img{
+    width: 250px;
+}
+#about-me > div{
+   width: 70%;
+}
+form > input{
+    height: 40px;
+    border-radius: 10px;
+    border: solid 1px rgb(18, 17, 17);
+    width: 100%;
+}
+textarea{
+    border-radius: 10px;
+    border: solid 1px rgb(18, 17, 17);
+    width: 100%;
+}
+input[type=submit]{
+    width: 200px;
+    background-color:rgb(18, 17, 17) ;
+    color: aliceblue;
+}
+label{
+    width: 100%;
+    font-size: 20px;
+}
+#contac{
+    margin-top: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+#contac > div{
+    width: 50%;
+}
+footer{
+    width: 100%;
+    background-color: rgb(18, 17, 17);
+    color: aliceblue;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:250px ;
+}
+footer > p{
+    display: flex;
+    align-items: center;
+}
+
